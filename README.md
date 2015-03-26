@@ -5,3 +5,5 @@ Oculus MySQL Database DDL DML
 - one SQL script per table testdata (re-runable)
 - run createDB.sql for setting up database
 - run fillDB.sql for filling DB with testdata
+
+ERD: https://www.lucidchart.com/documents/view/1ef372f3-c1d9-4caf-a7e1-90ab2c5d9d2e
