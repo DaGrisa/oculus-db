@@ -4,5 +4,7 @@ DML to create patient testdata.
 @history	2015-03-26	dgr	create
 */
 
+TRUNCATE TABLE patient;
+
 INSERT INTO patient (patientId, svn, firstName, lastName, birthDay, gender, street, postalCode, city, phone, email, allergy, childhoodAilments, medicineIntolerance) 
-VALUES (NULL, '1234010170', 'Donald', 'Duck', '1970-03-01', 'M', 'Entenstraﬂe 43g Stiege 7 Top 9', '378x93', 'Entenhausen', '004366477263549', 'donald.duck@quack.eh', 'Gl¸ck', 'Vogelgrippe', 'Polypropylenacetylmonochlorid');
+VALUES (NULL, '1234010170', 'Donald', 'Duck', '1970-03-01', 'M', 'Entenstra√üe 43g Stiege 7 Top 9', '378x93', 'Entenhausen', '004366477263549', 'donald.duck@quack.eh', 'Gl√ºck', 'Vogelgrippe', 'Polypropylenacetylmonochlorid');
