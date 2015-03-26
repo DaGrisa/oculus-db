@@ -8,7 +8,7 @@ DROP TABLE IF EXISTS patient;
 
 CREATE TABLE patient (
 patientId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
---doctorId INT(6) UNSIGNED FOREIGN KEY REFERENCES doctor(doctorId),
+doctorId INT(6) UNSIGNED,
 svn VARCHAR(10),
 firstName VARCHAR(30) NOT NULL,
 lastName VARCHAR(30) NOT NULL,
@@ -21,5 +21,6 @@ phone VARCHAR(50),
 email VARCHAR(255),
 allergy TEXT,
 childhoodAilments TEXT,
-medicineIntolerance TEXT
+medicineIntolerance TEXT,
+FOREIGN KEY (doctorId) REFERENCES doctor(doctorId)
 );
