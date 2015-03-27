@@ -14,3 +14,4 @@ SOURCE ./dml/servicecode.sql
 SOURCE ./dml/orthoptist.sql
 SOURCE ./dml/receptionist.sql
 SOURCE ./dml/administrator.sql
+SOURCE ./dml/queue.sql

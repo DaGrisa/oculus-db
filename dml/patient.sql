@@ -36,7 +36,7 @@ VALUES
                           FROM user
                           WHERE username = 'abc1234')), NULL, 'Lisa', 'Notfrau',
    NULL, 'F', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-  /* mock data */
+  /* mock data - dont change doctorId or names (dependencies in other dml scripts) */
   (NULL, (SELECT doctorId FROM doctor WHERE userId = (SELECT userId FROM user WHERE username = 'pta1234')), NULL, 'Wayne', 'Schmidt', NULL, 'M', '95378 Lotheville Parkway', NULL, NULL, 'AT', '2-(597)003-7339', NULL, 'Sonne', NULL, 'VESPA CRABRO'),
   (NULL, (SELECT doctorId FROM doctor WHERE userId = (SELECT userId FROM user WHERE username = 'xyz7890')), NULL, 'Russell', 'Fuller', NULL, 'M', '88381 Spenser Court', '22042 CEDEX 2', NULL, 'UK', '7-(226)072-2729', 'rfuller1@cocolog-nifty.com', NULL, NULL, 'ENALAPRILAT'),
   (NULL, (SELECT doctorId FROM doctor WHERE userId = (SELECT userId FROM user WHERE username = 'pta1234')), NULL, 'Patricia', 'Lawrence', '1985-02-14', 'F', NULL, NULL, 'Xiejiatan', 'AT', NULL, 'plawrence2@youku.com', 'Milch', NULL, 'FERROUS SULFATE'),
