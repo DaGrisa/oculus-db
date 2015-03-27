@@ -13,7 +13,7 @@ CREATE TABLE patient (
   birthDay            DATE,
   gender              ENUM('M', 'F') NOT NULL,
   street              VARCHAR(255),
-  postalCode          VARCHAR(10),
+  postalCode          VARCHAR(20),
   city                VARCHAR(50),
   countryIsoCode      VARCHAR(2),
   phone               VARCHAR(50),
