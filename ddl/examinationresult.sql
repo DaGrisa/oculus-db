@@ -13,7 +13,7 @@ createDate DATETIME,
 device VARCHAR(255),
 deviceData BLOB,
 FOREIGN KEY (examinationProtocolId) REFERENCES examinationProtocol(examinationProtocolId),
-FOREIGN KEY (userId) REFERENCES user(userId),
+FOREIGN KEY (userId) REFERENCES user(userId)
 );
 
 CREATE INDEX examinationResult_i1 ON examinationResult(examinationProtocolId);
