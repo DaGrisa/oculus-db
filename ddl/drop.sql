@@ -5,6 +5,16 @@ script for d the whole database
 */
 
 -- consider foreign key dependencies!
+DROP TABLE IF EXISTS referralletter;
+DROP TABLE IF EXISTS visualaid;
+DROP TABLE IF EXISTS workdisability;
+DROP TABLE IF EXISTS examinationprotocolservicecode;
+DROP TABLE IF EXISTS servicecode;
+DROP TABLE IF EXISTS prescriptionentry;
+DROP TABLE IF EXISTS prescription;
+DROP TABLE IF EXISTS medicine;
+DROP TABLE IF EXISTS examinationprotocol;
+DROP TABLE IF EXISTS diagnosis;
 DROP TABLE IF EXISTS userpermission;
 DROP TABLE IF EXISTS permission;
 DROP TABLE IF EXISTS queue;

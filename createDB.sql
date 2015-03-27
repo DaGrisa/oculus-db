@@ -23,3 +23,13 @@ SOURCE ./ddl/calendarevent.sql
 SOURCE ./ddl/queue.sql
 SOURCE ./ddl/permission.sql
 SOURCE ./ddl/userpermission.sql
+SOURCE ./ddl/diagnosis.sql
+SOURCE ./ddl/examinationprotocol.sql
+SOURCE ./ddl/medicine.sql
+SOURCE ./ddl/prescription.sql
+SOURCE ./ddl/prescriptionentry.sql
+SOURCE ./ddl/servicecode.sql
+SOURCE ./ddl/examinationprotocolservicecode.sql
+SOURCE ./ddl/workdisability.sql
+SOURCE ./ddl/visualaid.sql
+SOURCE ./ddl/referralletter.sql
