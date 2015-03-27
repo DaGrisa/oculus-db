@@ -11,7 +11,7 @@ svn VARCHAR(10),
 firstName VARCHAR(30) NOT NULL,
 lastName VARCHAR(30) NOT NULL,
 birthDay DATE,
-gender CHAR(1) NOT NULL CHECK(gender in ('M','F')),
+gender CHAR(1) NOT NULL, /* CHECK(gender in ('M','F')), CHECK ignored by MySQL https://dev.mysql.com/doc/refman/5.7/en/create-table.html */
 street VARCHAR(255),
 postalCode VARCHAR(10),
 city VARCHAR(50),
