@@ -5,4 +5,4 @@ DML to create user testdata.
 */
 
 INSERT INTO user (userId, userGroupId, userName, password, createDate, idleDate) VALUES
-  (NULL, (SELECT userGroupId FROM usergroup WHERE userGroupName = "Arzt"), "pta1234", "Ab123456", NULL, NULL);
+  (NULL, (SELECT userGroupId FROM usergroup WHERE userGroupName = "Arzt"), "pta1234", "Ab123456", DEFAULT, NULL);
