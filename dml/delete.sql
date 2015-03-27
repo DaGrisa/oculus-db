@@ -6,3 +6,4 @@ DML to delete all testdata.
 
 delete from patient;
 delete from usergroup;
+delete from servicecode;
