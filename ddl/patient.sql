@@ -5,25 +5,26 @@ DDL to create patient table.
 */
 
 CREATE TABLE patient (
-patientId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-doctorId INT(6) UNSIGNED,
-svn VARCHAR(10),
-firstName VARCHAR(30) NOT NULL,
-lastName VARCHAR(30) NOT NULL,
-birthDay DATE,
-gender CHAR(1) NOT NULL, /* CHECK(gender in ('M','F')), CHECK ignored by MySQL https://dev.mysql.com/doc/refman/5.7/en/create-table.html */
-street VARCHAR(255),
-postalCode VARCHAR(10),
-city VARCHAR(50),
-phone VARCHAR(50),
-email VARCHAR(255),
-allergy TEXT,
-childhoodAilments TEXT,
-medicineIntolerance TEXT,
-FOREIGN KEY (doctorId) REFERENCES doctor(doctorId)
+  patientId           INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  doctorId            INT(6) UNSIGNED,
+  socialInsuranceNr   VARCHAR(10),
+  firstName           VARCHAR(30)    NOT NULL,
+  lastName            VARCHAR(30)    NOT NULL,
+  birthDay            DATE,
+  gender              ENUM('M', 'F') NOT NULL,
+  street              VARCHAR(255),
+  postalCode          VARCHAR(10),
+  city                VARCHAR(50),
+  countryIsoCode      VARCHAR(2),
+  phone               VARCHAR(50),
+  email               VARCHAR(255),
+  allergy             TEXT,
+  childhoodAilments   TEXT,
+  medicineIntolerance TEXT,
+  FOREIGN KEY (doctorId) REFERENCES doctor (doctorId)
 );
 
-CREATE INDEX patient_i1 ON patient(doctorId);
-CREATE INDEX patient_i2 ON patient(svn);
-CREATE INDEX patient_i3 ON patient(firstName);
-CREATE INDEX patient_i4 ON patient(lastName);
+CREATE INDEX patient_i1 ON patient (doctorId);
+CREATE INDEX patient_i2 ON patient (svn);
+CREATE INDEX patient_i3 ON patient (firstName);
+CREATE INDEX patient_i4 ON patient (lastName);
