@@ -33,3 +33,4 @@ SOURCE ./ddl/examinationprotocolservicecode.sql
 SOURCE ./ddl/workdisability.sql
 SOURCE ./ddl/visualaid.sql
 SOURCE ./ddl/referralletter.sql
+SOURCE ./ddl/examinationresult.sql
