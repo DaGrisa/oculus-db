@@ -5,4 +5,4 @@ DML to create administrator testdata.
 */
 
 INSERT INTO administrator (administratorId, userId) VALUES
-  (NULL, (SELECT userId FROM user WHERE userName = "adm1337"));
+  (NULL, (SELECT userId FROM user WHERE userName = 'adm1337'));

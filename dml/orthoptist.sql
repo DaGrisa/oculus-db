@@ -5,5 +5,5 @@ DML to create orthoptist testdata.
 */
 
 INSERT INTO orthoptist (orthoptistId, userId, calendarId) VALUES
-  (NULL, (SELECT userId FROM user WHERE userName = "ort1234"), NULL),
-  (NULL, (SELECT userId FROM user WHERE userName = "ort5678"), NULL);
+  (NULL, (SELECT userId FROM user WHERE userName = 'ort1234'), NULL),
+  (NULL, (SELECT userId FROM user WHERE userName = 'ort5678'), NULL);

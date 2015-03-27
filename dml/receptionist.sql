@@ -5,4 +5,4 @@ DML to create receptionist testdata.
 */
 
 INSERT INTO receptionist (receptionistId, userId) VALUES
-  (NULL, (SELECT userId FROM user WHERE userName = "spr1357"));
+  (NULL, (SELECT userId FROM user WHERE userName = 'spr1357'));
