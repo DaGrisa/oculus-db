@@ -8,9 +8,9 @@ CREATE TABLE queue (
 queueId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 doctorId INT(6) UNSIGNED,
 orthoptistId INT(6) UNSIGNED,
-patientId INT(6) UNSIGNED UNIQUE,
+patientId INT(6) UNSIGNED UNIQUE NOT NULL,
 queueIdParent INT(6) UNSIGNED,
-arrivalTime DATETIME,
+arrivalTime DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 FOREIGN KEY (doctorId) REFERENCES doctor(doctorId),
 FOREIGN KEY (patientId) REFERENCES patient(patientId),
 FOREIGN KEY (orthoptistId) REFERENCES orthoptist(orthoptistId)
