@@ -18,3 +18,5 @@ FOREIGN KEY (diagnosisId) REFERENCES diagnosis(diagnosisId)
 );
 
 CREATE INDEX examinationProtocol_i1 ON examinationProtocol(patientId);
+CREATE INDEX examinationProtocol_i2 ON examinationProtocol(userId);
+CREATE INDEX examinationProtocol_i3 ON examinationProtocol(diagnosisId);
