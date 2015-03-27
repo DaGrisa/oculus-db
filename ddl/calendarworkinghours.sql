@@ -9,5 +9,6 @@ calendarWorkingHoursId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 morningFrom TIME,
 morningTo TIME,
 afternoonFrom TIME,
-afternoonTo TIME
+afternoonTo TIME,
+UNIQUE(morningFrom,morningTo,afternoonFrom,afternoonTo)
 );
