@@ -1,4 +1,4 @@
-﻿/* patient.sql
+﻿﻿/* patient.sql
 DML to create patient testdata.
 @creator dgr
 @history	2015-03-26	dgr	create
