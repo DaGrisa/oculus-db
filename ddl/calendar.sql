@@ -4,8 +4,6 @@ DDL to create calendar table.
 @history	2015-03-26	dgr	create
 */
 
-DROP TABLE IF EXISTS calendar;
-
 CREATE TABLE calendar (
 calendarId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 calendarWorkingHoursIdMonday INT(6) UNSIGNED,
@@ -23,3 +21,11 @@ FOREIGN KEY (calendarWorkingHoursIdFriday) REFERENCES calendarWorkingHours(calen
 FOREIGN KEY (calendarWorkingHoursIdSaturday) REFERENCES calendarWorkingHours(calendarWorkingHoursId),
 FOREIGN KEY (calendarWorkingHoursIdSunday) REFERENCES calendarWorkingHours(calendarWorkingHoursId)
 );
+
+CREATE INDEX calendar_i1 ON calendar(calendarWorkingHoursIdMonday);
+CREATE INDEX calendar_i2 ON calendar(calendarWorkingHoursIdTuesday);
+CREATE INDEX calendar_i3 ON calendar(calendarWorkingHoursIdWednesday);
+CREATE INDEX calendar_i4 ON calendar(calendarWorkingHoursIdThursday);
+CREATE INDEX calendar_i5 ON calendar(calendarWorkingHoursIdFriday);
+CREATE INDEX calendar_i6 ON calendar(calendarWorkingHoursIdSaturday);
+CREATE INDEX calendar_i7 ON calendar(calendarWorkingHoursIdSunday);
