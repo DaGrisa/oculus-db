@@ -4,8 +4,6 @@ DDL to create patient table.
 @history	2015-03-26	dgr	create
 */
 
-DROP TABLE IF EXISTS patient;
-
 CREATE TABLE patient (
 patientId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 doctorId INT(6) UNSIGNED,
@@ -24,3 +22,8 @@ childhoodAilments TEXT,
 medicineIntolerance TEXT,
 FOREIGN KEY (doctorId) REFERENCES doctor(doctorId)
 );
+
+CREATE INDEX patient_i1 ON patient(doctorId);
+CREATE INDEX patient_i2 ON patient(svn);
+CREATE INDEX patient_i3 ON patient(firstName);
+CREATE INDEX patient_i4 ON patient(lastName);
