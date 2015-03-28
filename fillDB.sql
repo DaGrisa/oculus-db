@@ -17,3 +17,4 @@ SOURCE ./dml/administrator.sql
 SOURCE ./dml/queue.sql
 SOURCE ./dml/eventtype.sql
 SOURCE ./dml/diagnosis.sql
+SOURCE ./dml/medicine.sql
