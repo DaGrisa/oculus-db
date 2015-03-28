@@ -4,6 +4,10 @@ DML to delete all testdata.
 @history	2015-03-26	dgr	create
 */
 
+delete from diagnosis;
+delete from eventtype;
+update queue set queueIdParent = null;
+delete from queue;
 delete from administrator;
 delete from receptionist;
 delete from orthoptist;

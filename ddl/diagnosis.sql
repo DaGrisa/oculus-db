@@ -8,7 +8,7 @@ CREATE TABLE diagnosis (
 diagnosisId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 doctorId INT(6) UNSIGNED,
 title VARCHAR(255),
-descripton TEXT,
+description TEXT,
 FOREIGN KEY (doctorId) REFERENCES doctor(doctorId)
 );
 
