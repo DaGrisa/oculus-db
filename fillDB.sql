@@ -19,3 +19,4 @@ SOURCE ./dml/eventtype.sql
 SOURCE ./dml/calendarEvent.sql
 SOURCE ./dml/diagnosis.sql
 SOURCE ./dml/medicine.sql
+SOURCE ./dml/examinationprotocol.sql

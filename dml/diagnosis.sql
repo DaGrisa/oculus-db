@@ -1,6 +1,6 @@
 /* diagnosis.sql
 DML to create eventtype testdata.
-@creator ari
+@creator dgr
 @history	2015-03-28	dgr	create https://www.mockaroo.com/525e3b40
 */
 
