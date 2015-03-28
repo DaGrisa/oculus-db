@@ -7,7 +7,7 @@ DDL to create doctor table.
 CREATE TABLE doctor (
 doctorId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 userId INT(6) UNSIGNED,
-calendarId INT(6) UNSIGNED,
+calendarId INT(6) UNSIGNED NOT NULL,
 doctorIdSubstitute INT(6) UNSIGNED,
 FOREIGN KEY (userId) REFERENCES user(userId),
 FOREIGN KEY (calendarId) REFERENCES calendar(calendarId)

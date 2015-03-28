@@ -7,7 +7,7 @@ DDL to create orthoptist table.
 CREATE TABLE orthoptist (
 orthoptistId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 userId INT(6) UNSIGNED,
-calendarId INT(6) UNSIGNED,
+calendarId INT(6) UNSIGNED NOT NULL,
 FOREIGN KEY (userId) REFERENCES user(userId),
 FOREIGN KEY (calendarId) REFERENCES calendar(calendarId)
 );
