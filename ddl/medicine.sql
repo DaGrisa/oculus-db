@@ -6,8 +6,8 @@ DDL to create medicine table.
 
 CREATE TABLE medicine (
 medicineId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-diagnosisId INT(6) UNSIGNED,
-name VARCHAR(100),
+diagnosisId INT(6) UNSIGNED NOT NULL,
+name VARCHAR(100) NOT NULL,
 dose VARCHAR(255),
 FOREIGN KEY (diagnosisId) REFERENCES diagnosis(diagnosisId)
 );
