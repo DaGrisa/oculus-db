@@ -1,4 +1,4 @@
--- consider foreign key dependencies!
+﻿-- consider foreign key dependencies!
 
 -- drop all data
 SOURCE ./dml/delete.sql
@@ -20,3 +20,4 @@ SOURCE ./dml/calendarEvent.sql
 SOURCE ./dml/diagnosis.sql
 SOURCE ./dml/medicine.sql
 SOURCE ./dml/examinationprotocol.sql
+SOURCE ./dml/workdisability.sql

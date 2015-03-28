@@ -1,4 +1,4 @@
-/* workdisability.sql
+﻿/* workdisability.sql
 DDL to create workdisability table.
 @creator dgr
 @history	2015-03-27	dgr	create
@@ -9,6 +9,8 @@ workDisabilityId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 diagnosisId INT(6) UNSIGNED,
 startDisability DATE,
 endDisability DATE,
+reason TEXT,
+bedRest BOOL,
 FOREIGN KEY (diagnosisId) REFERENCES diagnosis(diagnosisId)
 );
 
