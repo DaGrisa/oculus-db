@@ -6,6 +6,6 @@ DDL to create usergroup table.
 
 CREATE TABLE userGroup (
 userGroupId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-userGroupName VARCHAR(50) UNIQUE,
+userGroupName VARCHAR(50) UNIQUE NOT NULL,
 description TEXT
 );
