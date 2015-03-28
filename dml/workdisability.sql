@@ -6,9 +6,4 @@ DDL to create workdisability table.
 
 INSERT INTO workdisability (workDisabilityId, diagnosisId, startDisability, endDisability, reason, bedRest)
 VALUES
-	(NULL,
-	(select diagnosisId from (SELECT @rownum := @rownum + 1 ROWNUM , diagnosis.* FROM (SELECT @rownum := 0) r, diagnosis) t where rownum = 45),
-	'2015-03-30',
-	'2015-04-04',
-	'Needs to recover from removal of foreign body in eye.',
-	'TRUE');
+  (NULL, (SELECT diagnosisId FROM (SELECT @rownum := @rownum + 1 ROWNUM, diagnosis.* FROM (SELECT @rownum := 0) r, diagnosis) t WHERE rownum = 45), '2015-03-30', '2015-04-04', 'Needs to recover from removal of foreign body in eye.', TRUE);
