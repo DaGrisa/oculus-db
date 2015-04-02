@@ -11,7 +11,8 @@ userId INT(6) UNSIGNED,
 userGroupId INT(6) UNSIGNED,
 FOREIGN KEY (permissionId) REFERENCES permission(permissionId),
 FOREIGN KEY (userId) REFERENCES user(userId),
-FOREIGN KEY (userGroupId) REFERENCES userGroup(userGroupId)
+FOREIGN KEY (userGroupId) REFERENCES userGroup(userGroupId),
+UNIQUE(permissionId,userId,userGroupId)
 );
 
 CREATE INDEX userPermission_i1 ON userPermission(permissionId);
