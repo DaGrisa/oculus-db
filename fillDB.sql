@@ -6,8 +6,6 @@ SOURCE ./dml/delete.sql
 -- insert testdata
 SOURCE ./dml/usergroup.sql
 SOURCE ./dml/user.sql
-SOURCE ./dml/calendarworkinghours.sql
-SOURCE ./dml/calendar.sql
 SOURCE ./dml/doctor.sql
 SOURCE ./dml/patient.sql
 SOURCE ./dml/servicecode.sql
@@ -21,3 +19,4 @@ SOURCE ./dml/diagnosis.sql
 SOURCE ./dml/medicine.sql
 SOURCE ./dml/examinationprotocol.sql
 SOURCE ./dml/workdisability.sql
+SOURCE ./dml/weekday.sql

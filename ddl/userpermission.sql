@@ -5,14 +5,13 @@ DDL to create userpermission table.
 */
 
 CREATE TABLE userPermission (
-userPermissionId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 permissionId INT(6) UNSIGNED,
 userId INT(6) UNSIGNED,
 userGroupId INT(6) UNSIGNED,
 FOREIGN KEY (permissionId) REFERENCES permission(permissionId),
 FOREIGN KEY (userId) REFERENCES user(userId),
 FOREIGN KEY (userGroupId) REFERENCES userGroup(userGroupId),
-UNIQUE(permissionId,userId,userGroupId)
+PRIMARY KEY (permissionId, userId, userGroupId)
 );
 
 CREATE INDEX userPermission_i1 ON userPermission(permissionId);

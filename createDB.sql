@@ -11,8 +11,10 @@ SOURCE ./ddl/drop.sql
 -- consider foreign key dependencies!
 SOURCE ./ddl/usergroup.sql
 SOURCE ./ddl/user.sql
-SOURCE ./ddl/calendarworkinghours.sql
 SOURCE ./ddl/calendar.sql
+SOURCE ./ddl/weekday.sql
+SOURCE ./ddl/workinghours.sql
+SOURCE ./ddl/calendarworkinghours.sql
 SOURCE ./ddl/doctor.sql
 SOURCE ./ddl/patient.sql
 SOURCE ./ddl/orthoptist.sql
