@@ -6,5 +6,4 @@ DML to create prescription testdata.
 
 insert into prescription (prescriptionId, patientId, issueDate)
 select null, patientId, date_add(current_date, INTERVAL (-RAND()*3000) HOUR)
-from examinationProtocol e join diagnosis d on (e.diagnosisId = d.diagnosisId)
-join medicine m on (m.diagnosisId = d.diagnosisId);
+from examinationProtocol e join medicine m on (m.diagnosisId = e.diagnosisId);
