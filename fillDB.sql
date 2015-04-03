@@ -26,6 +26,8 @@ SOURCE ./dml/calendarworkinghours.sql
 SOURCE ./dml/insurancecarrier.sql
 SOURCE ./dml/examinationprotocolservicecode.sql
 SOURCE ./dml/examinationresult.sql
+SOURCE ./dml/prescription.sql
+SOURCE ./dml/prescriptionentry.sql
 
 /* TODO
 examinationresult.sql
