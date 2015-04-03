@@ -8,7 +8,7 @@ DML to create doctor testdata.
 */
 
 INSERT INTO doctor (doctorId, userId, calendarId, doctorIdSubstitute) VALUES
-  (NULL, (SELECT userId FROM user WHERE userName = 'pta1234'), (select calendarId from (SELECT @rownum := @rownum + 1 ROWNUM , calendar.* FROM (SELECT @rownum := 0) r, calendar) t where rownum = 1), NULL),
-  (NULL, (SELECT userId FROM user WHERE userName = 'dru8472'), (select calendarId from (SELECT @rownum := @rownum + 1 ROWNUM , calendar.* FROM (SELECT @rownum := 0) r, calendar) t where rownum = 2), NULL),
-  (NULL, (SELECT userId FROM user WHERE userName = 'abc1234'), (select calendarId from (SELECT @rownum := @rownum + 1 ROWNUM , calendar.* FROM (SELECT @rownum := 0) r, calendar) t where rownum = 3), NULL),
-  (NULL, (SELECT userId FROM user WHERE userName = 'xyz7890'), (select calendarId from (SELECT @rownum := @rownum + 1 ROWNUM , calendar.* FROM (SELECT @rownum := 0) r, calendar) t where rownum = 4), NULL);
+  (NULL, (SELECT userId FROM user WHERE userName = 'pta1234'), (select calendarId from calendar where title = 'pta1234'), NULL),
+  (NULL, (SELECT userId FROM user WHERE userName = 'dru8472'), (select calendarId from calendar where title = 'dru8472'), NULL),
+  (NULL, (SELECT userId FROM user WHERE userName = 'abc1234'), (select calendarId from calendar where title = 'abc1234'), NULL),
+  (NULL, (SELECT userId FROM user WHERE userName = 'xyz7890'), (select calendarId from calendar where title = 'xyz7890'), NULL);
