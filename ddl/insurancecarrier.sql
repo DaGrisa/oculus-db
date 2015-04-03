@@ -6,5 +6,5 @@ DDL to create insurancecarrier table.
 
 CREATE TABLE insuranceCarrier (
 insuranceCarrierKey VARCHAR(4) PRIMARY KEY,
-name VARCHAR(255)
+name VARCHAR(255) NOT NULL
 );
