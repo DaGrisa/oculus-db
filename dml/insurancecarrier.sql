@@ -10,4 +10,5 @@ INSERT INTO insuranceCarrier (insuranceCarrierKey, name) VALUES
 ('VAEB', 'Versicherungsanstalt für Eisenbahnen und Bergbau'), 
 ('SVA', 'Sozialversicherungsanstalt der gewerblichen Wirtschaft'), 
 ('SVB', 'Sozialversicherungsanstalt der Bauern'), 
-('BVA', 'Versicherungsanstalt öffentlich Bediensteter');
+('BVA', 'Versicherungsanstalt öffentlich Bediensteter'),
+('PRIV', 'Privat (auf Rechnung)');
