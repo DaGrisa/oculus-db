@@ -21,6 +21,8 @@ SOURCE ./dml/medicine.sql
 SOURCE ./dml/examinationprotocol.sql
 SOURCE ./dml/workdisability.sql
 SOURCE ./dml/weekday.sql
+SOURCE ./dml/workinghours.sql
+SOURCE ./dml/calendarworkinghours.sql
 
 /* TODO
 calendarworkinghours.sql

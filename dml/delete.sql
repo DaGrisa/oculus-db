@@ -4,6 +4,8 @@ DML to delete all testdata.
 @history	2015-03-26	dgr	create
 */
 
+DELETE FROM calendarworkinghours;
+DELETE FROM workinghours;
 DELETE FROM weekday;
 DELETE FROM workdisability;
 DELETE FROM examinationprotocol;
@@ -21,6 +23,5 @@ DELETE FROM patient;
 UPDATE doctor SET doctorIdSubstitute = NULL;
 DELETE FROM doctor;
 DELETE FROM calendar;
-DELETE FROM calendarworkinghours;
 DELETE FROM user;
 DELETE FROM usergroup;

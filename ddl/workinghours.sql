@@ -11,7 +11,8 @@ morningFrom TIME,
 morningTo TIME,
 afternoonFrom TIME,
 afternoonTo TIME,
-FOREIGN KEY (weekDayKey) REFERENCES weekDay(weekDayKey)
+FOREIGN KEY (weekDayKey) REFERENCES weekDay(weekDayKey),
+UNIQUE(weekDayKey, morningFrom, morningTo, afternoonFrom, afternoonTo)
 );
 
 CREATE INDEX workingHours_i1 ON workingHours(weekDayKey);
