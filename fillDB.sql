@@ -25,12 +25,8 @@ SOURCE ./dml/workinghours.sql
 SOURCE ./dml/calendarworkinghours.sql
 
 /* TODO
-calendarworkinghours.sql
-workingshours.sql
-diagnosis.sql
 examinationprotocolservicecode.sql
 examinationresult.sql
-
 
 derzeit nicht unbedingt benötigt (?)
 permission.sql
