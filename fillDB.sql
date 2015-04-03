@@ -25,6 +25,7 @@ SOURCE ./dml/workinghours.sql
 SOURCE ./dml/calendarworkinghours.sql
 SOURCE ./dml/insurancecarrier.sql
 SOURCE ./dml/examinationprotocolservicecode.sql
+SOURCE ./dml/examinationresult.sql
 
 /* TODO
 examinationresult.sql
