@@ -28,13 +28,12 @@ SOURCE ./dml/examinationprotocolservicecode.sql
 
 /* TODO
 examinationresult.sql
+prescription.sql
+prescriptionentry.sql
 
 derzeit nicht unbedingt benötigt (?)
 permission.sql
 userpermission.sql
-
 visualaid.sql
 referralletter.sql
-prescription.sql
-prescriptionentry.sql
 */
