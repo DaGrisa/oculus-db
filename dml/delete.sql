@@ -4,6 +4,8 @@ DML to delete all testdata.
 @history	2015-03-26	dgr	create
 */
 
+DELETE FROM examinationprotocolservicecode;
+DELETE FROM insurancecarrier;
 DELETE FROM calendarworkinghours;
 DELETE FROM workinghours;
 DELETE FROM weekday;

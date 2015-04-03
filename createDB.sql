@@ -31,6 +31,7 @@ SOURCE ./ddl/medicine.sql
 SOURCE ./ddl/prescription.sql
 SOURCE ./ddl/prescriptionentry.sql
 SOURCE ./ddl/servicecode.sql
+SOURCE ./ddl/insurancecarrier.sql
 SOURCE ./ddl/examinationprotocolservicecode.sql
 SOURCE ./ddl/workdisability.sql
 SOURCE ./ddl/visualaid.sql

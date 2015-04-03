@@ -1,10 +1,10 @@
-/* 
+/* servicecode.sql
 DML to create servicecode testdata.
 @creator dgr
 @history	2015-03-27	dgr	create
 */
 
-INSERT INTO servicecode (serviceCodeId, serviceCode, description) VALUES 
+INSERT INTO serviceCode (serviceCodeId, serviceCode, description) VALUES 
 (NULL, '100', 'Fremdkörperentfernung aus der Cornea einschl. Anästhesie'), 
 (NULL, '101', 'Tonometrie (nur verrechenbar bei a) Glaukom oder Glaukomverdacht b) konsiliarer Befundung)'), 
 (NULL, '102', 'Gesichtfeldprüfung oder Skotometrie (nur verrechenbar bei a) Glaukom oder Glaukomverdacht b) Sehstörung bei Augenhintergrundveränderungen c) neuroophtalmologischen Grenzfällen d) konsiliarer Befundung'), 

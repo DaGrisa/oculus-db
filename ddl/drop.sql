@@ -11,6 +11,7 @@ DROP TABLE IF EXISTS visualaid;
 DROP TABLE IF EXISTS workdisability;
 DROP TABLE IF EXISTS examinationprotocolservicecode;
 DROP TABLE IF EXISTS servicecode;
+DROP TABLE IF EXISTS insurancecarrier;
 DROP TABLE IF EXISTS prescriptionentry;
 DROP TABLE IF EXISTS prescription;
 DROP TABLE IF EXISTS medicine;

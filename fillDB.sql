@@ -23,12 +23,10 @@ SOURCE ./dml/workdisability.sql
 SOURCE ./dml/weekday.sql
 SOURCE ./dml/workinghours.sql
 SOURCE ./dml/calendarworkinghours.sql
+SOURCE ./dml/insurancecarrier.sql
+SOURCE ./dml/examinationprotocolservicecode.sql
 
 /* TODO
-calendarworkinghours.sql
-workingshours.sql
-diagnosis.sql
-examinationprotocolservicecode.sql
 examinationresult.sql
 
 
