@@ -9,6 +9,7 @@ referralLetterId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 patientId INT(6) UNSIGNED,
 examinationProtocolId INT(6) UNSIGNED,
 externalInstitute VARCHAR(100) NOT NULL,
+reason TEXT NOT NULL,
 FOREIGN KEY (patientId) REFERENCES patient(patientId),
 FOREIGN KEY (examinationProtocolId) REFERENCES examinationProtocol(examinationProtocolId)
 );
