@@ -29,7 +29,6 @@ SOURCE ./dml/examinationprotocolservicecode.sql
 /* TODO
 examinationresult.sql
 
-
 derzeit nicht unbedingt benötigt (?)
 permission.sql
 userpermission.sql
