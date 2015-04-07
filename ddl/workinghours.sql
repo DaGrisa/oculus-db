@@ -6,13 +6,13 @@ DDL to create workingHours table.
 
 CREATE TABLE workingHours (
 workingHoursId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-weekDayKey CHAR(3) NOT NULL,
+weekDayId INT(6) UNSIGNED NOT NULL,
 morningFrom TIME,
 morningTo TIME,
 afternoonFrom TIME,
 afternoonTo TIME,
-FOREIGN KEY (weekDayKey) REFERENCES weekDay(weekDayKey),
-UNIQUE(weekDayKey, morningFrom, morningTo, afternoonFrom, afternoonTo)
+FOREIGN KEY (weekDayId) REFERENCES weekDay(weekDayId),
+UNIQUE(weekDayId, morningFrom, morningTo, afternoonFrom, afternoonTo)
 );
 
-CREATE INDEX workingHours_i1 ON workingHours(weekDayKey);
+CREATE INDEX workingHours_i1 ON workingHours(weekDayId);

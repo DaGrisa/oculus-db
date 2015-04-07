@@ -4,11 +4,11 @@ DML to create weekday testdata.
 @history	2015-04-02	dgr	create
 */
 
-INSERT INTO weekday (weekDayKey, name) VALUES 
-('MON', 'Monday'), 
-('TUE', 'Tuesday'), 
-('WED', 'Wednesday'), 
-('THU', 'Thursday'), 
-('FRI', 'Friday'), 
-('SAT', 'Saturday'), 
-('SUN', 'Sunday');
+INSERT INTO weekday (weekDayId, name) VALUES 
+(null, 'Monday'), 
+(null, 'Tuesday'), 
+(null, 'Wednesday'), 
+(null, 'Thursday'), 
+(null, 'Friday'), 
+(null, 'Saturday'), 
+(null, 'Sunday');

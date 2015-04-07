@@ -5,6 +5,6 @@ DDL to create weekday table.
 */
 
 CREATE TABLE weekDay (
-weekDayKey CHAR(3) PRIMARY KEY,
+weekDayId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(10) NOT NULL
 );
