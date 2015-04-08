@@ -8,6 +8,8 @@ CREATE TABLE calendarWorkingHours (
 calendarWorkingHoursId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 workingHoursId INT(6) UNSIGNED,
 calendarId INT(6) UNSIGNED,
+weekDayKey ENUM('MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN') NOT NULL,
+
 FOREIGN KEY (workingHoursId) REFERENCES workingHours(workingHoursId),
 FOREIGN KEY (calendarId) REFERENCES calendar(calendarId)
 );
