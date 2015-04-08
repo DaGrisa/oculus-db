@@ -11,7 +11,6 @@ DELETE FROM examinationprotocolservicecode;
 DELETE FROM insurancecarrier;
 DELETE FROM calendarworkinghours;
 DELETE FROM workinghours;
-DELETE FROM weekday;
 DELETE FROM workdisability;
 DELETE FROM examinationprotocol;
 DELETE FROM medicine;

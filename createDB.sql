@@ -12,7 +12,6 @@ SOURCE ./ddl/drop.sql
 SOURCE ./ddl/usergroup.sql
 SOURCE ./ddl/user.sql
 SOURCE ./ddl/calendar.sql
-SOURCE ./ddl/weekday.sql
 SOURCE ./ddl/workinghours.sql
 SOURCE ./ddl/calendarworkinghours.sql
 SOURCE ./ddl/doctor.sql
