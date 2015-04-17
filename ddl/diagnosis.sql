@@ -6,7 +6,7 @@ DDL to create diagnosis table.
 
 CREATE TABLE diagnosis (
 diagnosisId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-doctorId INT(6) UNSIGNED,
+doctorId INT(6) UNSIGNED NOT NULL,
 title VARCHAR(255),
 description TEXT,
 FOREIGN KEY (doctorId) REFERENCES doctor(doctorId)

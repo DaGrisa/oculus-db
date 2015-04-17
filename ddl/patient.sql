@@ -21,7 +21,8 @@ CREATE TABLE patient (
   allergy             TEXT,
   childhoodAilments   TEXT,
   medicineIntolerance TEXT,
-  FOREIGN KEY (doctorId) REFERENCES doctor (doctorId)
+  FOREIGN KEY (doctorId) REFERENCES doctor (doctorId),
+  FULLTEXT (socialInsuranceNr,firstName,lastName)
 );
 
 CREATE INDEX patient_i1 ON patient (doctorId);
