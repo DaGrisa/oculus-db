@@ -15,7 +15,7 @@ CREATE TABLE patient (
   street              VARCHAR(255),
   postalCode          VARCHAR(20),
   city                VARCHAR(50),
-  countryIsoCode      VARCHAR(2),
+  countryIsoCode      VARCHAR(3),
   phone               VARCHAR(50),
   email               VARCHAR(255),
   allergy             TEXT,
