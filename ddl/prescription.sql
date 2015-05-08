@@ -8,6 +8,7 @@ CREATE TABLE prescription (
 prescriptionId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 patientId INT(6) UNSIGNED,
 issueDate DATETIME DEFAULT CURRENT_TIMESTAMP,
+lastPrint DATETIME,
 FOREIGN KEY (patientId) REFERENCES patient(patientId)
 );
 
