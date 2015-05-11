@@ -27,6 +27,7 @@ SOURCE ./dml/examinationprotocolservicecode.sql
 SOURCE ./dml/examinationresult.sql
 SOURCE ./dml/prescription.sql
 SOURCE ./dml/prescriptionentry.sql
+SOURCE ./dml/visualaid.sql
 
 /* TODO
 examinationresult.sql
@@ -36,6 +37,5 @@ prescriptionentry.sql
 derzeit nicht unbedingt benötigt (?)
 permission.sql
 userpermission.sql
-visualaid.sql
 referralletter.sql
 */
