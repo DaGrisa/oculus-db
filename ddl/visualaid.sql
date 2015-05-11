@@ -7,7 +7,7 @@ DDL to create visualaid table.
 CREATE TABLE visualAid (
 visualAidId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 diagnosisId INT(6) UNSIGNED,
-diagnosis TEXT,
+description TEXT,
 issueDate DATETIME,
 lastPrint DATETIME,
 FOREIGN KEY (diagnosisId) REFERENCES diagnosis(diagnosisId)
