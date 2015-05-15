@@ -999,3 +999,7 @@ insert into visualAid (visualAidId, diagnosisId, description, issueDate, lastPri
 (null, (select diagnosisId from (SELECT @rownum := @rownum + 1 ROWNUM , diagnosis.* FROM (SELECT @rownum := 0) r, diagnosis) t where rownum = 68), 'Cervical incompetence, antepartum condition or complication', '21.10.2014', '2.4.2015'),
 (null, (select diagnosisId from (SELECT @rownum := @rownum + 1 ROWNUM , diagnosis.* FROM (SELECT @rownum := 0) r, diagnosis) t where rownum = 4), 'Primary angle-closure glaucoma, unspecified', '10.8.2014', '8.4.2015'),
 (null, (select diagnosisId from (SELECT @rownum := @rownum + 1 ROWNUM , diagnosis.* FROM (SELECT @rownum := 0) r, diagnosis) t where rownum = 90), 'Longitudinal deficiency, ulnar, complete or partial (with or without distal deficiencies, incomplete)', '13.10.2014', '6.6.2014');
+
+update visualAid
+   set dioptreLeft = round(rand() * 10.49 + 0.01, 2),
+       dioptreRight = round(rand() * 10.49 + 0.01, 2);
