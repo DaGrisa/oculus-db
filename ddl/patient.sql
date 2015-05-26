@@ -18,11 +18,13 @@ CREATE TABLE patient (
   countryIsoCode      VARCHAR(3),
   phone               VARCHAR(50),
   email               VARCHAR(255),
+  password            VARCHAR(255),
   allergy             TEXT,
   childhoodAilments   TEXT,
   medicineIntolerance TEXT,
   FOREIGN KEY (doctorId) REFERENCES doctor (doctorId),
-  FULLTEXT (socialInsuranceNr,firstName,lastName)
+  FULLTEXT (socialInsuranceNr,firstName,lastName),
+  CONSTRAINT patient_u1 UNIQUE (email)
 );
 
 CREATE INDEX patient_i1 ON patient (doctorId);
