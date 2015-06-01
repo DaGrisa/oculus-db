@@ -17,7 +17,7 @@ CREATE TABLE patient (
   city                VARCHAR(50),
   countryIsoCode      VARCHAR(3),
   phone               VARCHAR(50),
-  email               VARCHAR(255),
+  email               VARCHAR(255) 	 NOT NULL,
   password            VARCHAR(255),
   allergy             TEXT,
   childhoodAilments   TEXT,
